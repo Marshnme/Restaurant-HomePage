@@ -1,0 +1,31 @@
+{
+  "name": "restaurant-homepage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "start": "webpack serve --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marshnme/Restaurant-HomePage.git"
+  },
+  "author": "Joshua Holtsclaw",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Marshnme/Restaurant-HomePage/issues"
+  },
+  "homepage": "https://github.com/Marshnme/Restaurant-HomePage#readme",
+  "devDependencies": {
+    "css-loader": "^6.7.1",
+    "css-minimizer-webpack-plugin": "^4.0.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.6.0",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.9.1"
+  }
+}
