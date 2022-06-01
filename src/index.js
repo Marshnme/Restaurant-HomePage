@@ -1,6 +1,46 @@
-const bodyEle = document.querySelector("body");
-const contentDiv = document.createElement("div");
+import home from "./components/home"
+import menu from "./components/menu"
+import contact from "./components/contact"
 
+const bodyEle = document.querySelector("body");
+
+const contentDiv = document.createElement("div");
 contentDiv.id = "content";
+
+const navEle = document.createElement("nav");
+
+const homeNav = document.createElement("p");
+homeNav.textContent = "Home";
+
+const menuNav = document.createElement("p");
+menuNav.textContent = "Menu";
+
+const contactNav = document.createElement("p");
+contactNav.textContent = "Contact";
+
+navEle.appendChild(homeNav)
+navEle.appendChild(menuNav)
+navEle.appendChild(contactNav)
+
 bodyEle.appendChild(contentDiv);
+contentDiv.appendChild(navEle)
+
+
+function displayHome(){
+    contentDiv
+    return home()
+}
+
+function displayMenu(){
+    return menu()
+}
+
+function displayContact(){
+    return contact()
+}
+
+homeNav.addEventListener("click",displayHome)
+menuNav.addEventListener("click",displayMenu)
+contactNav.addEventListener("click",displayContact)
+
 
