@@ -3,12 +3,12 @@
 
 
 const home = () => {
-    const contentDiv = document.querySelector("#content")
+    const mainEle = document.querySelector("main");
     let headerTest = document.createElement("h1");
     headerTest.textContent="Header";
     
     
-    contentDiv.appendChild(headerTest)
+    mainEle.appendChild(headerTest)
 }
 
 

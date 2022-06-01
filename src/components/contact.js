@@ -4,12 +4,12 @@
 
 
 const contact = () => {
-    const contentDiv = document.querySelector("#content")
+    const mainEle = document.querySelector("main");
     let contactTest = document.createElement("h1");
     contactTest.textContent="Contact";
     
     
-    contentDiv.appendChild(contactTest)
+    mainEle.appendChild(contactTest)
 }
 
 

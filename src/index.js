@@ -8,6 +8,7 @@ const contentDiv = document.createElement("div");
 contentDiv.id = "content";
 
 const navEle = document.createElement("nav");
+const mainEle = document.createElement("main");
 
 const homeNav = document.createElement("p");
 homeNav.textContent = "Home";
@@ -24,18 +25,24 @@ navEle.appendChild(contactNav)
 
 bodyEle.appendChild(contentDiv);
 contentDiv.appendChild(navEle)
+contentDiv.appendChild(mainEle)
 
 
 function displayHome(){
-    contentDiv
+    // mainEle.removeChild()
+    mainEle.replaceChildren();
     return home()
 }
 
 function displayMenu(){
+    // mainEle.removeChild()
+    mainEle.replaceChildren();
     return menu()
 }
 
 function displayContact(){
+    // mainEle.removeChild()
+    mainEle.replaceChildren();
     return contact()
 }
 
