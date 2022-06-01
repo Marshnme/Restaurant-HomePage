@@ -1,13 +1,16 @@
 import home from "./components/home"
 import menu from "./components/menu"
 import contact from "./components/contact"
+import "./style.css"
 
 const bodyEle = document.querySelector("body");
 
 const contentDiv = document.createElement("div");
-contentDiv.id = "content";
+contentDiv.classList.add("content");
 
 const navEle = document.createElement("nav");
+navEle.classList.add("nav");
+
 const mainEle = document.createElement("main");
 
 const homeNav = document.createElement("p");
@@ -15,6 +18,7 @@ homeNav.textContent = "Home";
 
 const menuNav = document.createElement("p");
 menuNav.textContent = "Menu";
+
 
 const contactNav = document.createElement("p");
 contactNav.textContent = "Contact";
@@ -29,19 +33,16 @@ contentDiv.appendChild(mainEle)
 
 
 function displayHome(){
-    // mainEle.removeChild()
     mainEle.replaceChildren();
     return home()
 }
 
 function displayMenu(){
-    // mainEle.removeChild()
     mainEle.replaceChildren();
     return menu()
 }
 
 function displayContact(){
-    // mainEle.removeChild()
     mainEle.replaceChildren();
     return contact()
 }
