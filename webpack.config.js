@@ -24,9 +24,10 @@ module.exports = {
         static:"./dist"
     },
     plugins:[
+        new MiniCssExtractPlugin(),
         new HtmlWebpackPlugin({
             title:"Home Page"
-        })
+        }),
     ],
     optimization:{
         minimizer:[
