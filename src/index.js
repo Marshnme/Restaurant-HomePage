@@ -7,6 +7,7 @@ const bodyEle = document.querySelector("body");
 
 const contentDiv = document.createElement("div");
 contentDiv.classList.add("content");
+contentDiv.classList.add("home-img");
 
 const navEle = document.createElement("nav");
 navEle.classList.add("nav");
