@@ -6,7 +6,7 @@ const home = () => {
     const contentDiv = document.querySelector(".content");
     const mainEle = document.querySelector("main");
     let buisName = document.createElement("h1");
-    buisName.classList.add("text-shadow","name")
+    buisName.classList.add("name")
     buisName.textContent="Noodle Bar";
 
     let infoContainer = document.createElement("div");

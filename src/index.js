@@ -6,27 +6,22 @@ import "./style.css"
 const bodyEle = document.querySelector("body");
 
 const contentDiv = document.createElement("div");
-contentDiv.classList.add("content");
-contentDiv.classList.add("home-img");
+contentDiv.classList.add("content", "home-img");
 
 const navEle = document.createElement("nav");
 navEle.classList.add("nav");
 
-const mainEle = document.createElement("main");
-
 const homeNav = document.createElement("p");
 homeNav.textContent = "Home";
-
 const menuNav = document.createElement("p");
 menuNav.textContent = "Menu";
-
-
 const contactNav = document.createElement("p");
 contactNav.textContent = "Contact";
-
 navEle.appendChild(homeNav)
 navEle.appendChild(menuNav)
 navEle.appendChild(contactNav)
+
+const mainEle = document.createElement("main");
 
 bodyEle.appendChild(contentDiv);
 contentDiv.appendChild(navEle)

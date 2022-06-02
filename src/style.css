@@ -31,6 +31,28 @@ main{
     margin: 1.5rem auto 0 auto;
 }
 
+
+/* SHARED STYLES  */
+
+.info-contain{
+    margin-top:3rem;
+    padding:2rem;
+    border:1px solid rgba(20, 19, 19, 0.8);
+    height:45vh;
+    min-width:85%;
+    box-shadow: 0px 0px 20px #141313cc ;
+    background-color: rgba(70, 67, 67, 0.274);
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+}
+
+.info-contain-title{
+    text-align: center;
+}
+
+
+
 /* HOME STYLES */
 
 .home-img{
@@ -50,18 +72,16 @@ main{
     font-size: 3rem;
     letter-spacing: .3rem;
 }
-.text-shadow{
-    /* text-shadow: 3px 5px 5px white; */
-}
+
 
 .info-contain{
     margin-top:3rem;
     padding:2rem;
     border:1px solid rgba(20, 19, 19, 0.8);
-    height:45vh;
+    /* height:45vh; */
     min-width:85%;
     box-shadow: 0px 0px 20px #141313cc ;
-
+    background-color: rgba(70, 67, 67, 0.274);
     display:flex;
     flex-flow: column nowrap;
     justify-content: space-evenly;
@@ -75,6 +95,7 @@ main{
 .info-content-container{
     display: flex;
     justify-content: space-evenly;
+    padding:2rem 0;
 }
 
 .info-content{
