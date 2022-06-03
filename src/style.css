@@ -19,6 +19,7 @@ nav{
     align-items: center;
     padding:2rem 0;
     gap:10%;
+    font-size: 1.5rem;
 }
 
 
@@ -28,7 +29,7 @@ main{
     align-items: center;
     flex-flow: column nowrap;
     width:85%;
-    margin: 1.5rem auto 0 auto;
+    margin: 1rem auto 0 auto;
 }
 
 
