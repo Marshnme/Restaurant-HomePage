@@ -47,7 +47,7 @@ const menu = () => {
     allItems.map((item) => {
         let imgTag = document.createElement("img")
             imgTag.src = icon
-            imgTag.width = "80"
+            imgTag.width = "65"
         item.appendChild(imgTag)
     })
 

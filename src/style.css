@@ -96,11 +96,36 @@ main{
 
 /* menu styles */
 
-/* .info-contain-menu{
+.info-contain-menu{
+    width:100%;
+    justify-content:normal;
     display:grid;
     grid-template-areas:
-     'icon text text'
-     'icon text text'
-     'icon text text'
+     'item-one item-two '
+     'item-three item-four '
+     'item-five item-six '
     ;
-} */
+}
+
+.menu-item{
+    align-self:center;
+}
+
+.menu-item-one{
+    grid-area: item-one;
+}
+.menu-item-Two{
+    grid-area: item-two;
+}
+.menu-item-Three{
+    grid-area: item-three;
+}
+.menu-item-Four{
+    grid-area: item-four;
+}
+.menu-item-Five{
+    grid-area: item-five;
+}
+.menu-item-Six{
+    grid-area: item-six;
+}
