@@ -96,6 +96,11 @@ main{
 
 /* menu styles */
 
-.info-contain-menu{
+/* .info-contain-menu{
     display:grid;
-}
+    grid-template-areas:
+     'icon text text'
+     'icon text text'
+     'icon text text'
+    ;
+} */

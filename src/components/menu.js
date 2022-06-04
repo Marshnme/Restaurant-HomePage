@@ -14,12 +14,43 @@ const menu = () => {
     mainEle.appendChild(menuTitle)
     mainEle.appendChild(infoContainer)
 
-    let menuItemOneContain = document.createElement("div")
-    let imgTag = document.createElement("img")
-    imgTag.src = icon
-    imgTag.width = "80"
     
-    infoContainer.appendChild(imgTag)
+    let menuItemOneContain = document.createElement("div")
+    menuItemOneContain.classList.add("menu-item","menu-item-one")
+
+    let menuItemTwoContain = document.createElement("div")
+    menuItemTwoContain.classList.add("menu-item","menu-item-two")
+
+    let menuItemThreeContain = document.createElement("div")
+    menuItemThreeContain.classList.add("menu-item","menu-item-three")
+
+    let menuItemFourContain = document.createElement("div")
+    menuItemFourContain.classList.add("menu-item","menu-item-four")
+
+    let menuItemFiveContain = document.createElement("div")
+    menuItemFiveContain.classList.add("menu-item","menu-item-five")
+
+    let menuItemSixContain = document.createElement("div")
+    menuItemSixContain.classList.add("menu-item","menu-item-six")
+
+    infoContainer.appendChild(menuItemOneContain)
+    infoContainer.appendChild(menuItemTwoContain)
+    infoContainer.appendChild(menuItemThreeContain)
+    infoContainer.appendChild(menuItemFourContain)
+    infoContainer.appendChild(menuItemFiveContain)
+    infoContainer.appendChild(menuItemSixContain)
+
+    let allItems = [...document.querySelectorAll(".menu-item")];
+
+    console.log(allItems)
+
+    allItems.map((item) => {
+        let imgTag = document.createElement("img")
+            imgTag.src = icon
+            imgTag.width = "80"
+        item.appendChild(imgTag)
+    })
+
     
 }
 
