@@ -15,6 +15,7 @@ const menu = () => {
     mainEle.appendChild(infoContainer)
 
     
+    
     let menuItemOneContain = document.createElement("div")
     menuItemOneContain.classList.add("menu-item","menu-item-one")
 
@@ -45,10 +46,14 @@ const menu = () => {
     console.log(allItems)
 
     allItems.map((item) => {
+        let exampleText= document.createElement("p")
+        exampleText.textContent = "food food food food"
+    
         let imgTag = document.createElement("img")
             imgTag.src = icon
             imgTag.width = "65"
         item.appendChild(imgTag)
+        item.appendChild(exampleText)
     })
 
     

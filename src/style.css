@@ -97,7 +97,7 @@ main{
 /* menu styles */
 
 .info-contain-menu{
-    width:100%;
+    min-width: 95%;
     justify-content:normal;
     display:grid;
     grid-template-areas:
@@ -105,10 +105,17 @@ main{
      'item-three item-four '
      'item-five item-six '
     ;
+    column-gap: 5%;
 }
 
 .menu-item{
-    align-self:center;
+    display:flex;
+    align-items: center;
+}
+
+.menu-item > p{
+    /* align-self: center; */
+    padding-left:15px;
 }
 
 .menu-item-one{
