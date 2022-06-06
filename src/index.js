@@ -47,4 +47,5 @@ homeNav.addEventListener("click",displayHome)
 menuNav.addEventListener("click",displayMenu)
 contactNav.addEventListener("click",displayContact)
 
+window.onload = displayHome()
 
