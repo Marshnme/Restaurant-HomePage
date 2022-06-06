@@ -115,7 +115,6 @@ main{
 /* menu styles */
 
 .info-contain-menu{
-    min-width: 95%;
     justify-content:normal;
     display:grid;
     grid-template-areas:
@@ -124,7 +123,6 @@ main{
      'item-five item-six '
     ;
     column-gap: 5%;
-    padding:2rem 1rem;
 }
 
 .menu-item{
