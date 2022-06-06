@@ -50,8 +50,9 @@ const menu = () => {
         exampleText.textContent = "food food food food"
     
         let imgTag = document.createElement("img")
+            imgTag.classList.add("ramen-img")
             imgTag.src = icon
-            imgTag.width = "65"
+            // imgTag.width = "65"
         item.appendChild(imgTag)
         item.appendChild(exampleText)
     })
